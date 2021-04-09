@@ -53,7 +53,7 @@ public class AddPage extends HttpServlet {
                     BufferedWriter bw=new BufferedWriter(new FileWriter(f.getAbsoluteFile()));
                     bw.write(content);
                     bw.close();
-                    String escaped = Escape.html(fileName)
+                    String escaped = Escape.html(fileName);
                     out.print("Successfully created the file: <a href='../pages/"+escaped+"'>"+escaped+"</a>");
                 }
                 else
